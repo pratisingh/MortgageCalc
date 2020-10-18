@@ -1,0 +1,24 @@
+caption {
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: table-caption;
+}
+.table-striped > tbody > tr:nth-child(odd) > td {
+    background-color: #fff;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td {
+    background-color: #ddd;
+}
+
+thead {
+    background-color: #ddd;
+}
+.heading {
+    text-align: center;
+    
+}

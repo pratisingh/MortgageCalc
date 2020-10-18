@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="heading mt-5">
+        <h5>
+            Calculation Summary
+        </h5>
+    </div>
+    
+    <table class="table table-striped table-bordered mt-2" cllspacing="0" cellpadding="0" striped="true">
+        
+        <thead>
+            <th>Category</th>
+            <th>Term</th>
+            <th>Amortization Period</th>
+        </thead>
+        <tbody>
+            <tr >
+                <td>Number of Payments</td>
+                <td>{{noOfTermPayment}}</td>
+                <td>{{noOfAmmortPayment}}</td>
+              </tr>
+              <tr >
+                  <td>Mortgage Payment</td>
+                  <td>{{monthlyPayment}}</td>
+                  <td>{{monthlyPayment}}</td>
+              </tr>
+              <tr >
+                  <td>Principal Payments</td>
+                  <td>{{totalCostTerm?.totalprinciple | number :'1.2-2'}}</td>
+                  <td>{{totalAmmortCost?.totalprinciple | number :'1.2-2'}}</td>
+              </tr>
+              <tr>
+                  <td>Interest Payments</td>
+                  <td>{{totalCostTerm?.totalInterest | number :'1.2-2'}}</td>
+                  <td> {{totalAmmortCost?.totalInterest | number:'1.2-2'}}</td>
+              </tr>
+              <tr>
+                  <td>Total Cost</td>
+                  <td>{{termTotal | number :'1.2-2'}}</td>
+                  <td>{{AmortTotal | number :'1.2-2'}}</td>
+              </tr>
+        </tbody>
+        
+      </table>
+    
+</div>
