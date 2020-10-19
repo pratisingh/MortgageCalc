@@ -1,12 +1,6 @@
 import { Component } from "@angular/core";
-import { formatCurrency } from "@angular/common";
 import { MortgageService } from "./services/mortgage.service";
-import {
-  SingleDataSet,
-  Label,
-  monkeyPatchChartJsLegend,
-  monkeyPatchChartJsTooltip
-} from "ng2-charts";
+import { SingleDataSet, Label } from "ng2-charts";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -39,7 +33,7 @@ export class AppComponent {
   paymentPlan = {
     loanAmount: 100000,
     interestRate: 5,
-    amortizationPeriod: 10,
+    amortizationPeriod: 25,
     loanTermInYears: 5,
     paymentfrequency: 12
   };
